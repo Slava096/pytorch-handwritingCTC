@@ -42,8 +42,7 @@ class CTCData(Dataset):
         img_name = self.word_df.iloc[idx, 0]
         folder_name = self.get_folder(img_name)
         img_filepath = os.path.join(self.root_dir,
-                                   folder_name,
-                                   img_name)
+                                   folder_name)
         try:
             image = io.imread(img_filepath)
             
